@@ -1,16 +1,11 @@
-Net-Common version 0.01
+Net-Common version 0.02
 =======================
 
-The README is used to introduce the module and provide instructions on
-how to install the module, any machine dependencies it may have (for
-example C compilers and installed libraries) and any other information
-that should be provided before the module is installed.
-
-A README file is required for CPAN modules since CPAN extracts the
-README file from a module distribution so that people browsing the
-archive can use it get an idea of the modules uses. It is usually a
-good idea to provide version information here so that people can
-decide whether fixes for the module are worth downloading.
+Net::Common aims to provide a simple, object-oriented interface to common
+networking tasks such as TTL discovery, ICMP ping, host discovery, etc. At
+the moment it is a mere skeleton, but it will be developing at a fast pace.
+Developers are encouraged to submit ideas and/or patches to
+shellshark at shellshark dot net.
 
 INSTALLATION
 
@@ -25,13 +20,17 @@ DEPENDENCIES
 
 This module requires these other modules and libraries:
 
-  blah blah blah
+  strict
+  warnings
+  IO::Socket
+  IO::Select
+  Socket
+  Socket6 (optional)
+  POSIX
 
 COPYRIGHT AND LICENCE
 
-Put the correct copyright and licence information here.
-
-Copyright (C) 2004 by A. U. Thor
+Copyright (C) 2004 by Bryce Porter
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.3 or,
